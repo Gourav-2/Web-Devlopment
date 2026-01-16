@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 50vh;
+            width: 100vw;
+            border: solid red;
+            display: flex;/* ye parent ke box ko graph me bana deta hai */
+
+            /* x axis operation */
+            /* justify-content: center;   
+            /* /* justify-content: end; */
+            /* justify-content: baseline; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+
+
+            /* y axis operation */
+            /* align-items: baseline; */ 
+            align-items: center;
+            /* align-items: end; */
+            justify-content: center;
+            
+             
+
+
+        }
+        #parent div{
+            height: 100px;
+            width: 100px;
+
+        }
+        .one{
+            background-color: black;
+        }
+        .two{
+            background-color: aqua;
+        }
+        .three{
+            background-color: blue;
+        }
+        .four{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+</body>
+</html>
