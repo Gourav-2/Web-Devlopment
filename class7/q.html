@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bar{
+            width: auto;
+            height: auto;
+            border: 3px solid;
+            border-radius: 10px;
+            display: flex;
+            justify-content: baseline;
+            flex-wrap: wrap;
+            gap: 50px;
+            background-color: black;
+            color: aliceblue;
+
+        }
+        #last{
+            height: 34px;
+            display: flex;
+            justify-content: end;
+            /* align-items: center; */
+            position: relative;
+            top: 8px;
+            left: 650px;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            
+        }
+        #one{
+            border-radius: 15px;
+
+            width: 200px;
+            background-color: rgb(199, 214, 227);
+        }
+        #two{
+            width: 70px;
+            border-radius: 14px;
+            background-color: rgb(199, 214, 227);
+        }
+         .aak{
+                position: relative;
+                
+                left: 10px;
+            }
+            #do{
+                top: -5px;
+            }
+            
+         @media  screen and (max-width :1277px) {
+
+            #bar{
+                height: auto;
+                width: auto;
+                /* background-color: white; */
+                position: relative;
+                flex-direction: column;
+                
+            }
+            .aak{
+                position: relative;
+                top: 12px;
+                left: 15px;
+            }
+            .last{
+                position: relative;
+                top: -500px;
+                left: -678px;
+            }
+            
+         }
+         
+    </style>
+</head>
+<body>
+    <div id="bar">
+        <h3 class="aak" id="do">Navbar</h3>
+        <p class="aak">Home</p>
+        <p class="aak">Link</p>
+        <p class="aak">Occupation</p>
+        <p class="aak">contact</p>
+        <div id="last">
+            <button id="one" class="last">🔍Search</button>
+        <button id="two" class="last">Login</button>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>
