@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 800px;
+            width: 400px;
+            border: 2px solid black;
+            
+            
+            
+        }
+        .one{
+            height: 100px;
+            width: 100px;
+            transition: 2s;
+            margin: 0px auto;
+            
+
+        }
+        #one{
+            background-color: aqua;
+            border-radius: 50% ;
+            stroke-width: 10px black;
+             transition-timing-function: ease-in-out;
+        }
+       
+
+        
+        #parent:hover .one{
+            /* margin-left: 850px; */
+            /* margin-bottom: 950px; */
+            margin-top: 700px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="one" class="one"></div>
+        
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #papa{
+            height: 400px;
+            width: 400px;
+            position: relative;
+            margin: 20px auto;
+            transition: 4s;
+            transform-style: preserve-3d;
+
+            
+            
+        }
+         img{
+            height: 100%;
+            width: 100%;
+            
+
+        } 
+         #a{
+            position: absolute;
+            z-index: 1;
+            height: 50%;
+            width: 100%;
+            backface-visibility: hidden;
+            
+         } 
+        #b{
+            
+            height: 50%;
+            width: 100%;
+            z-index: 5;
+            background-color:red;
+            transform: rotateX(180deg);
+            /* transform: rotateX(180deg); */
+
+        } 
+        #papa:hover{
+            /* transform: rotateY(180deg); */
+            transform: rotateX(180deg);
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <div id="papa">
+        <div id="a">
+            <img src="Super Hero Poster.jpg"/>
+
+        </div>
+        <div id="b">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, eligendi.
+
+        </div>
+    </div>
+</body>
+</html>
