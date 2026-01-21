@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            border: 2px solid;
+            height: 700px;
+            display: grid;
+            /* ye function colum create karne ke liaa use hota hai */
+            /* grid-template-columns: 200px 200px 200px; */
+            /* is unit se space egual divide ho jate hai */
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* ye function row create karne ke liaa use hota hai */
+            /* grid-template-rows: 100px 100px 100px 100px; */
+            gap: 2px;
+
+
+        }
+        .child{
+            height: auto;
+            width: auto;
+            border: 1px solid;
+
+            background-color: aqua;
+        }
+        #one{
+            background-color: red;
+            /* aagr is block ko move karna hai to ye property use hogi */
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start:2 ;
+            grid-column-end:3 ;
+        }
+        #three{
+            background-color: rgb(61, 5, 228);
+        }
+        #nine{
+            background-color: rgb(41, 233, 172);
+        }
+        #eight{
+            background-color: rgb(231, 16, 199);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="child" id="one">1</div>
+        <div class="child" id="two">2</div>
+        <div class="child" id="three">3</div>
+        <div class="child" id="four">4</div>
+        <div class="child" id="five">5</div>
+        <div class="child" id="six">6</div>
+        <div class="child" id="seven">7</div>
+        <div class="child" id="eight">8</div>
+        <div class="child" id="nine">9</div>
+        <div class="child" id="ten">10</div>
+        <div class="child" id="12">11</div>
+        <div class="child" id="11">12</div>
+       
+       
+
+    </div>
+</body>
+</html>

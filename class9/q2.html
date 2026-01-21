@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><style>
+        #back{
+            height: 85vh;
+            width: 100vw;
+            background: linear-gradient(
+                rgb(85, 208, 233),white
+
+            ); 
+            /* display: flex; */
+           
+        }
+        #sun{
+            height: 200px;
+            width: 200px;
+            
+            background: linear-gradient(red, orange);
+            border-radius: 50%;
+            position: relative;
+            
+            left: 85vw;
+            animation-name: sun;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            
+            
+
+
+
+        }
+        @keyframes sun {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+            
+        }
+        #box{
+            
+            height: 120px;
+            width: 100vw;
+            background-color: green;
+            position: relative;
+            top: 65vh;
+        }
+        #wel{
+            position: relative;
+            width: 470px;
+            background-color: antiquewhite;
+            top: 50px;
+            left: 950px;
+        }
+        .ballon{
+            height: 150px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            
+            position: relative;
+            top: 55vh;
+            /* position: absolute; */
+            animation-name: up;
+            animation-duration: 900ms;
+            animation-iteration-count: infinite;
+            
+            
+
+            
+        }
+        @keyframes up {
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-900px);
+            }
+            
+        }
+        #bob{
+            /* position: absolute; */
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        #two{
+            position: relative;
+            /* bottom:  -50px; */
+            background-color: red;
+
+        }
+        #three{
+            background-color: rgb(110, 193, 110);
+
+        }
+        #four{
+            background-color: blueviolet;
+
+        }
+        #five{
+            background-color: blue;
+
+        }
+
+
+        
+        
+
+    </style>
+</head>
+<body id="back">
+    <div >
+        <h1 id="wel">🎉Welcome to Ballon Festival🎈</h1>
+        <div id="sun"></div>
+        
+        
+        <div id="box"></div>
+        <div id="bob">
+            <div id="two" class="ballon"></div>
+     <div id="three" class="ballon"></div>
+     <div id="four" class="ballon"></div>
+     <div id="five" class="ballon"></div>
+        </div>
+
+    </div>
+    
+    
+    
+
+</body>
+</html>
